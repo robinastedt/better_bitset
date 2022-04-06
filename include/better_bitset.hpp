@@ -107,7 +107,7 @@ namespace better_bitset
                 if (chunk_pos != sizeof(Inner_t) * 8)
                     return pos;
             }
-            return pos;
+            return N;
         }
         /// @brief Tests the bit at a an index. Does not perform a bounds
         /// check in release
