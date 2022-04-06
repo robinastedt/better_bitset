@@ -1,5 +1,5 @@
 
-#include "better_bitset.hpp"
+#include <better_bitset.hpp>
 
 #include <iostream>
 
