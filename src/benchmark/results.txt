@@ -1,0 +1,39 @@
+2022-04-06T21:47:00+02:00
+Running ./build/src/benchmark/benchmark
+Run on (16 X 4850.19 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 32768 KiB (x1)
+Load Average: 0.42, 0.35, 0.31
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+-----------------------------------------------------------
+Benchmark                 Time             CPU   Iterations
+-----------------------------------------------------------
+BM_Bitset<4>           9178 ns         9170 ns        76265
+BM_Bitset<8>          14248 ns        14236 ns        50314
+BM_Bitset<16>         24643 ns        24624 ns        27980
+BM_Bitset<32>         48412 ns        48373 ns        15153
+BM_Bitset<64>         90616 ns        90545 ns         7621
+BM_Bitset<96>        159151 ns       159005 ns         4288
+BM_Bitset<128>       218166 ns       217926 ns         3300
+BM_Bitset<256>       395958 ns       395600 ns         1788
+BM_Bitset<512>       816758 ns       815910 ns          869
+BM_Bitset<1024>     1638800 ns      1637147 ns          430
+BM_Bitset<2048>     2838236 ns      2835727 ns          242
+BM_Bitset<4096>     6026551 ns      6021602 ns          116
+BM_Bitset<8192>    11995585 ns     11985875 ns           56
+BM_BBitset<4>          7318 ns         7313 ns        95280
+BM_BBitset<8>          7241 ns         7235 ns        95982
+BM_BBitset<16>         7422 ns         7417 ns        93587
+BM_BBitset<32>         7174 ns         7168 ns        97126
+BM_BBitset<64>         7144 ns         7139 ns        97625
+BM_BBitset<96>         7480 ns         7474 ns        91745
+BM_BBitset<128>        8308 ns         8302 ns        84808
+BM_BBitset<256>        8649 ns         8642 ns        79700
+BM_BBitset<512>       12801 ns        12790 ns        54576
+BM_BBitset<1024>      19166 ns        19150 ns        34611
+BM_BBitset<2048>      36167 ns        36133 ns        19749
+BM_BBitset<4096>      70138 ns        70059 ns         9878
+BM_BBitset<8192>     130948 ns       130788 ns         5179
