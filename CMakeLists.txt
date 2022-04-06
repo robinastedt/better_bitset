@@ -7,14 +7,18 @@ project(better-bitset
 
 option(BB_BENCH "Build better_bitset benchmark" OFF)
 
+enable_testing()
+
+set(CMAKE_CXX_STANDARD 20)
+
 add_library(better_bitset INTERFACE)
 
 target_include_directories(better_bitset INTERFACE
 	${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_compile_features(better_bitset INTERFACE cxx_std_20)
-
 if (BB_BENCH)
 	find_package(benchmark REQUIRED)
 	add_subdirectory(benchmark)
 endif()
+
+add_subdirectory(src)
